@@ -4,6 +4,12 @@ body {
   display: flex;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .gallery {
   list-style: none;
   display: flex;
@@ -36,3 +42,9 @@ body {
   scale: 1.05;
 }
 
+.geri-don {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+}
