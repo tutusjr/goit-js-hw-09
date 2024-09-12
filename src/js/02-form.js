@@ -33,6 +33,7 @@ function onFormSubmit(e) {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(formObject));
     console.log(formObject);
     form.reset();
+    localStorage.removeItem(LOCAL_STORAGE_KEY);
   } else {
     alert('Alani niye bos biraktin guzel kardesim');
   }
@@ -41,6 +42,6 @@ window.addEventListener('load', () => {
   const savedData = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
   if (savedData) {
     form.email.value = savedData.email ;
-    form.message.value = savedData.message;6
+    form.message.value = savedData.message;
   }
 });
